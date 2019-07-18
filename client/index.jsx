@@ -1,10 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import RelatedCarousel from './carousel.jsx'
-//import X from 'Y'
 
-//holds the currents related homes in state and renders a Carousel with those databse objects passed in. makes get request with fetch to API to populate the related array
-// needs to be declared with a home object denoting the current item page for the sake of deciding relation
+//holds the currents related homes in state and renders a Carousel with those database objects passed in. makes get request with fetch to API to populate the related array
 class App extends React.Component {
   constructor(props){
     super(props)

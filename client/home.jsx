@@ -10,8 +10,6 @@ var Home = (props) => (
     gridColumn:`${props.index} / ${props.index + 1}`,
     gridRow:'1'
   }}>
-
-    {/* onClick={launch modal for sign in} */}
     <div className='homeImg' style={{
       width:'300px',
       height:'210px',
@@ -68,7 +66,6 @@ var Home = (props) => (
           starSpacing='0px'
           />
         </span>
-        {/*image based off this.props.rating */}
         <span className='smallestText' style={{
           color: 'rgb(72, 72, 72)',
           marginTop: '2px',
