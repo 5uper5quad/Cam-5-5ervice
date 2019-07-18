@@ -1,16 +1,15 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import Home from './home.jsx'
 
 
-//holds individual homes, might be refactored to stateless if no state is required
+//holds all the homes retrieved from backend and renders into a carousel
 class RelatedCarousel extends React.Component{
   constructor(props){
     super(props)
 
     this.state = {
       position:0,
-      translate:0,
+      translate:0
     }
   }
 
@@ -41,7 +40,6 @@ class RelatedCarousel extends React.Component{
   render() {
     return (
       <div>
-
         <div
         style={{
           float:'left',
@@ -62,7 +60,7 @@ class RelatedCarousel extends React.Component{
           marginRight:'35%',
           float:'right',
           overflow:'visible',
-          visibility:`${this.state.position === 10 ?'hidden' : 'visible'}`
+          visibility:`${this.state.position === 9 ?'hidden' : 'visible'}`
         }}>
           <i 
           className="fas fa-chevron-right"
