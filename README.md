@@ -18,7 +18,13 @@
 ## Usage
 
 > serve service: npm run start 
-"start": "nodemon --ignore node_modules server"
+  "scripts": {
+    "build": "webpack -d --watch",
+    "start": "node ./server/index.js",
+    "server-dev":"nodemon --ignore node_modules server",
+    "test": "jest",
+    "seed": "node ./server/scripts/seed.js"
+  }
 
 service runs on port :3001
 

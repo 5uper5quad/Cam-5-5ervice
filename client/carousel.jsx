@@ -41,7 +41,6 @@ class RelatedCarousel extends React.Component{
   render() {
     return (
       <div>
-
         <div
         style={{
           float:'left',
@@ -62,7 +61,7 @@ class RelatedCarousel extends React.Component{
           marginRight:'35%',
           float:'right',
           overflow:'visible',
-          visibility:`${this.state.position === 10 ?'hidden' : 'visible'}`
+          visibility:`${this.state.position === 9 ?'hidden' : 'visible'}`
         }}>
           <i 
           className="fas fa-chevron-right"

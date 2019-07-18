@@ -25,6 +25,9 @@ class App extends React.Component {
         related: parsed
       })
     })
+    .catch((err) => {
+      console.log(err)
+    })
   }
 
   componentDidMount() {
@@ -42,7 +45,7 @@ class App extends React.Component {
         marginTop: '16px',
         marginBottom: '24px',
         height:'30%',
-        width:'90%',
+        width:'90%'
         }}>
 
         <RelatedCarousel homes={this.state.related}/>
